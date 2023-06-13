@@ -46,16 +46,12 @@ public struct SheetOptions {
     
     /* These properties will be removed in an upcoming release, leaving them for now so people can transition slowly */
     
-    @available(*, unavailable, message: "minimumSpaceAbovePullBar is now a property on SheetViewController")
     public var minimumSpaceAbovePullBar: CGFloat = 0
     
-    @available(*, unavailable, message: "gripSize is now a property on SheetViewController")
     public var gripSize: CGSize = .zero
     
-    @available(*, unavailable, message: "gripColor is now a property on SheetViewController")
     public var gripColor: UIColor = .white
     
-    @available(*, unavailable, message: "pullBarBackgroundColor is now a property on SheetViewController")
     public var pullBarBackgroundColor: UIColor = UIColor.clear
     
     @available(*, unavailable, message: "cornerRadius is now a property on SheetViewController")
@@ -91,7 +87,6 @@ public struct SheetOptions {
         self.isRubberBandEnabled = isRubberBandEnabled ?? false
     }
     
-    @available(*, unavailable, message: "cornerRadius, minimumSpaceAbovePullBar, gripSize and gripColor are now properties on SheetViewController. Use them instead.")
     public init(pullBarHeight: CGFloat? = nil,
                 gripSize: CGSize? = nil,
                 gripColor: UIColor? = nil,
